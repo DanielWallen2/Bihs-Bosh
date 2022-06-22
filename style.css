@@ -21,14 +21,13 @@ li {
 
 #button-col {
     padding-left: 0rem;
-    padding-right: 2rem;
+    padding-right: 0rem;
 }
 
 #input-col-1, #input-col-2, #input-col-3 {
     padding-left: 0rem;
     padding-right: 2rem;
 }
-
 
 .form-label {
     display: inline-flex;
@@ -44,6 +43,7 @@ li {
 }
 #calculate-button {
     display: inline-flex;
+    float: right;
     margin-left: 1rem;
     margin-right: 1rem;
 }

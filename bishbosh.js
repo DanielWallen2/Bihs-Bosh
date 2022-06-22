@@ -12,6 +12,7 @@ function bishBosh() {
     if(bishTal < 0 || boshTal < 0 || loopTal < 0) { err = 'Inga negativa värden tillåts. '; };
     if(bishTal < 2) { err += 'Bish-nr måste vara minst 2. '; };
     if(boshTal < 3) { err += 'Bosh-nr måste vara minst 3. '; };
+    if(boshTal <= bishTal) { err += 'Bosh-nr måste större än Bish-nr.'; };
     if((bishTal >= loopTal) || (boshTal >= loopTal)) { err += 'Bish-nr och Bosh-nr måste vara mindre än Loop-nr. '; };
     if(!Number.isInteger(bishTal) || !Number.isInteger(boshTal) || !Number.isInteger(loopTal)) { err += 'Endast heltal tillåts.'; };
     if(err !== '') { document.getElementById('output').innerHTML = err; return; };
