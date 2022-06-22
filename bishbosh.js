@@ -9,6 +9,11 @@ function bishBosh() {
     let boshTal = document.getElementById('boshTal').value;
     let loopTal = document.getElementById('loopTal').value;
 
+    if(bishTal < 0 || boshTal < 0 || loopTal < 0) {
+        document.getElementById('output').innerHTML = 'Inga negativa värden tillåts!';
+        exit;
+    }
+
     let x = calcBishBosh(bishTal, boshTal, loopTal);
     // console.log(x);
 
